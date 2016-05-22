@@ -33,6 +33,10 @@
 		{
 			"Name": "GearVR",
 			"Enabled": false
+		},
+		{
+			"Name": "Substance",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
