@@ -40,9 +40,8 @@ SourceArt/**/*.png
 SourceArt/**/*.tga
 
 # Don't ignore Binary Files and Plugins or you will get errors on another machines
-!Binaries/*
-
-!Plugins/**/*.dll
+!Binaries/**/*
+!Plugins/**/*
 
 # Builds
 Build/*
