@@ -37,6 +37,14 @@
 		{
 			"Name": "SubversionSourceControl",
 			"Enabled": false
+		},
+		{
+			"Name": "FMODStudio",
+			"Enabled": true
+		},
+		{
+			"Name": "Substance",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
