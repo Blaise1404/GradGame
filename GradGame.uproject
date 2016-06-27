@@ -1,16 +1,13 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.11",
+	"EngineAssociation": "4.12",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "GradGame",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
+			"LoadingPhase": "Default"
 		}
 	],
 	"Plugins": [
@@ -19,37 +16,8 @@
 			"Enabled": true
 		},
 		{
-			"Name": "OculusAudio",
-			"Enabled": true
-		},
-		{
-			"Name": "SimpleHMD",
-			"Enabled": true
-		},
-		{
-			"Name": "GearVR",
-			"Enabled": false
-		},
-		{
-			"Name": "PerforceSourceControl",
-			"Enabled": false
-		},
-		{
-			"Name": "SubversionSourceControl",
-			"Enabled": false
-		},
-		{
 			"Name": "FMODStudio",
 			"Enabled": true
-		},
-		{
-			"Name": "Substance",
-			"Enabled": true
 		}
-	],
-	"TargetPlatforms": [
-		"MacNoEditor",
-		"PS4",
-		"WindowsNoEditor"
 	]
 }
