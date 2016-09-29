@@ -11,7 +11,6 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
 
 # Fortran module files
 *.mod
@@ -35,9 +34,6 @@
 *.opensdf
 *.sdf
 *.sln
-
-# Binary Files
-Binaries/*
 
 # Builds
 Build/*
