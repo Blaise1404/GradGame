@@ -126,6 +126,10 @@
 		{
 			"Name": "LeapMotion",
 			"Enabled": true
+		},
+		{
+			"Name": "HoudiniEngine",
+			"Enabled": false
 		}
 	]
 }
