@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.13",
+	"EngineAssociation": "4.14",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -17,10 +17,6 @@
 		},
 		{
 			"Name": "SoundVisualizations",
-			"Enabled": true
-		},
-		{
-			"Name": "FMODStudio",
 			"Enabled": true
 		},
 		{
@@ -130,6 +126,15 @@
 		{
 			"Name": "HoudiniEngine",
 			"Enabled": false
+		},
+		{
+			"Name": "FMODStudio",
+			"Enabled": true
 		}
+	],
+	"TargetPlatforms": [
+		"PS4",
+		"WindowsNoEditor",
+		"XboxOne"
 	]
 }
