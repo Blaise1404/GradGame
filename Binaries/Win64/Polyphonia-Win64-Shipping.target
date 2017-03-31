@@ -1,8 +1,8 @@
 {
 	"TargetName" : "Polyphonia",
 	"Platform" : "Win64",
-	"Configuration" : "Development",
-	"BuildId" : "54957bfb-453b-4d1b-89b1-119aa3476acd",
+	"Configuration" : "Shipping",
+	"BuildId" : "3a620e4b-d3c1-4994-9f4a-b0afcf6730ce",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -16,19 +16,19 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/Polyphonia.exe",
+			"Path" : "$(ProjectDir)/Binaries/Win64/Polyphonia-Win64-Shipping.exe",
 			"Type" : "Executable"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/Polyphonia.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/Polyphonia-Win64-Shipping.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4-FMODStudioOculus.lib",
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4-FMODStudioOculus-Win64-Shipping.lib",
 			"Type" : "StaticLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4-FMODStudio.lib",
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4-FMODStudio-Win64-Shipping.lib",
 			"Type" : "StaticLibrary"
 		}
 	],
@@ -131,23 +131,15 @@
 			"Type" : "UFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Content/SlateDebug/...",
-			"Type" : "UFS"
-		},
-		{
 			"Path" : "$(ProjectDir)/Content/Slate/...",
 			"Type" : "UFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Content/SlateDebug/...",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/fmodL64.dll",
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/fmod64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/fmodstudioL64.dll",
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/fmodstudio64.dll",
 			"Type" : "NonUFS"
 		},
 		{
@@ -163,87 +155,83 @@
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Content/Stats/...",
-			"Type" : "UFS"
-		},
-		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundationPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundationPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDKPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDKPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3PROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3PROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3CookingPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3CookingPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Cooking_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3CommonPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Common_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3CommonPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PhysX3Common_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundationPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundation_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDKPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxPvdSDK_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_ClothingPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Clothing_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_ClothingPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Clothing_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_DestructiblePROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Destructible_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_DestructiblePROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Destructible_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_LegacyPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Legacy_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_LegacyPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/APEX_Legacy_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFrameworkPROFILE_x64.dll",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFramework_x64.dll",
 			"Type" : "NonUFS"
 		},
 		{
-			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFrameworkPROFILE_x64.pdb",
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/ApexFramework_x64.pdb",
 			"Type" : "DebugNonUFS"
 		},
 		{
