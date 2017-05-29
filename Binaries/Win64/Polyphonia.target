@@ -2,16 +2,17 @@
 	"TargetName" : "Polyphonia",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "54957bfb-453b-4d1b-89b1-119aa3476acd",
+	"BuildId" : "5e30cf25-9431-4ff6-8bff-84d6c09d2447",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
-		"MinorVersion" : 14,
+		"MinorVersion" : 15,
 		"PatchVersion" : 3,
-		"Changelist" : 3249277,
-		"CompatibleChangelist" : 3195953,
+		"Changelist" : 3450819,
+		"CompatibleChangelist" : 3299760,
 		"IsLicenseeVersion" : 0,
-		"BranchName" : "++UE4+Release-4.14"
+		"IsPromotedBuild" : 1,
+		"BranchName" : "++UE4+Release-4.15"
 	},
 	"BuildProducts" :
 	[
@@ -51,6 +52,10 @@
 			"Type" : "UFS"
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/FacialAnimation.uplugin",
+			"Type" : "UFS"
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Experimental/BlueprintStats/BlueprintStats.uplugin",
 			"Type" : "UFS"
 		},
@@ -60,6 +65,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Experimental/StereoPanorama/StereoPanorama.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/MfMedia/MfMedia.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -95,6 +104,10 @@
 			"Type" : "UFS"
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/LocationServicesBPLibrary/LocationServicesBPLibrary.uplugin",
+			"Type" : "UFS"
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/MobilePatchingUtils/MobilePatchingUtils.uplugin",
 			"Type" : "UFS"
 		},
@@ -112,6 +125,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/OculusRift/OculusRift.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/PhysXVehicles/PhysXVehicles.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -165,6 +182,10 @@
 		{
 			"Path" : "$(EngineDir)/Content/Stats/...",
 			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.dll",
+			"Type" : "NonUFS"
 		},
 		{
 			"Path" : "$(EngineDir)/Binaries/ThirdParty/PhysX/Win64/VS2015/PxFoundationPROFILE_x64.dll",

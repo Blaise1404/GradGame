@@ -6,15 +6,52 @@
 	"Version" : 
 	{
 		"MajorVersion" : 4,
-		"MinorVersion" : 14,
-		"PatchVersion" : 3,
-		"Changelist" : 3249277,
-		"CompatibleChangelist" : 3195953,
+		"MinorVersion" : 15,
+		"PatchVersion" : 1,
+		"Changelist" : 3348071,
+		"CompatibleChangelist" : 3299760,
 		"IsLicenseeVersion" : 0,
-		"BranchName" : "++UE4+Release-4.14"
+		"IsPromotedBuild" : 1,
+		"BranchName" : "++UE4+Release-4.15"
 	},
 	"BuildProducts" :
 	[
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor-FMODStudioOculus.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor-FMODStudioOculus.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-FMODStudioOculus.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor-FMODStudio.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor-FMODStudio.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-FMODStudio.lib",
+			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor-FMODStudioEditor.dll",
+			"Type" : "DynamicLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor-FMODStudioEditor.pdb",
+			"Type" : "SymbolFile"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-FMODStudioEditor.lib",
+			"Type" : "ImportLibrary"
+		},
 		{
 			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-Polyphonia.dll",
 			"Type" : "DynamicLibrary"
@@ -26,12 +63,24 @@
 		{
 			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-Polyphonia.lib",
 			"Type" : "ImportLibrary"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/UE4Editor.modules",
+			"Type" : "RequiredResource"
+		},
+		{
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor.modules",
+			"Type" : "RequiredResource"
 		}
 	],
 	"RuntimeDependencies" :
 	[
 		{
 			"Path" : "$(ProjectDir)/Polyphonia.uproject",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/FMODStudio.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -63,6 +112,14 @@
 			"Type" : "UFS"
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/Editor/FacialAnimation/FacialAnimation.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Editor/GameplayTagsEditor/GameplayTagsEditor.uplugin",
+			"Type" : "UFS"
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Editor/PluginBrowser/PluginBrowser.uplugin",
 			"Type" : "UFS"
 		},
@@ -88,6 +145,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Media/MediaPlayerEditor/MediaPlayerEditor.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Media/MfMedia/MfMedia.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -131,6 +192,10 @@
 			"Type" : "UFS"
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/LocationServicesBPLibrary/LocationServicesBPLibrary.uplugin",
+			"Type" : "UFS"
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/MobilePatchingUtils/MobilePatchingUtils.uplugin",
 			"Type" : "UFS"
 		},
@@ -148,6 +213,10 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Runtime/OculusRift/OculusRift.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Runtime/PhysXVehicles/PhysXVehicles.uplugin",
 			"Type" : "UFS"
 		},
 		{
@@ -177,6 +246,18 @@
 		{
 			"Path" : "$(EngineDir)/Content/SlateDebug/...",
 			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/fmodL64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/fmodstudioL64.dll",
+			"Type" : "NonUFS"
+		},
+		{
+			"Path" : "$(ProjectDir)/Plugins/FMODStudio/Binaries/Win64/ovrfmod.dll",
+			"Type" : "NonUFS"
 		}
 	]
 }
