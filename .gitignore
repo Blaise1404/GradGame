@@ -51,9 +51,6 @@ Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-#Plugins
-Plugins/*
-
 #Plugins binaries
 PluginsRes/*
 
