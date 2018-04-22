@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -399,23 +399,23 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFFMODAttenuationDeta
 	{
 		UClass* Class = UFMODAudioComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "GetLength", (Native)&UFMODAudioComponent::execGetLength },
-			{ "GetParameter", (Native)&UFMODAudioComponent::execGetParameter },
-			{ "GetProperty", (Native)&UFMODAudioComponent::execGetProperty },
-			{ "GetTimelinePosition", (Native)&UFMODAudioComponent::execGetTimelinePosition },
-			{ "IsPlaying", (Native)&UFMODAudioComponent::execIsPlaying },
-			{ "Play", (Native)&UFMODAudioComponent::execPlay },
-			{ "Release", (Native)&UFMODAudioComponent::execRelease },
-			{ "SetEvent", (Native)&UFMODAudioComponent::execSetEvent },
-			{ "SetParameter", (Native)&UFMODAudioComponent::execSetParameter },
-			{ "SetPaused", (Native)&UFMODAudioComponent::execSetPaused },
-			{ "SetPitch", (Native)&UFMODAudioComponent::execSetPitch },
-			{ "SetProgrammerSoundName", (Native)&UFMODAudioComponent::execSetProgrammerSoundName },
-			{ "SetProperty", (Native)&UFMODAudioComponent::execSetProperty },
-			{ "SetTimelinePosition", (Native)&UFMODAudioComponent::execSetTimelinePosition },
-			{ "SetVolume", (Native)&UFMODAudioComponent::execSetVolume },
-			{ "Stop", (Native)&UFMODAudioComponent::execStop },
-			{ "TriggerCue", (Native)&UFMODAudioComponent::execTriggerCue },
+			{ "GetLength", &UFMODAudioComponent::execGetLength },
+			{ "GetParameter", &UFMODAudioComponent::execGetParameter },
+			{ "GetProperty", &UFMODAudioComponent::execGetProperty },
+			{ "GetTimelinePosition", &UFMODAudioComponent::execGetTimelinePosition },
+			{ "IsPlaying", &UFMODAudioComponent::execIsPlaying },
+			{ "Play", &UFMODAudioComponent::execPlay },
+			{ "Release", &UFMODAudioComponent::execRelease },
+			{ "SetEvent", &UFMODAudioComponent::execSetEvent },
+			{ "SetParameter", &UFMODAudioComponent::execSetParameter },
+			{ "SetPaused", &UFMODAudioComponent::execSetPaused },
+			{ "SetPitch", &UFMODAudioComponent::execSetPitch },
+			{ "SetProgrammerSoundName", &UFMODAudioComponent::execSetProgrammerSoundName },
+			{ "SetProperty", &UFMODAudioComponent::execSetProperty },
+			{ "SetTimelinePosition", &UFMODAudioComponent::execSetTimelinePosition },
+			{ "SetVolume", &UFMODAudioComponent::execSetVolume },
+			{ "Stop", &UFMODAudioComponent::execStop },
+			{ "TriggerCue", &UFMODAudioComponent::execTriggerCue },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -987,7 +987,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFFMODAttenuationDeta
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFMODAudioComponent, 3961427632);
+	IMPLEMENT_CLASS(UFMODAudioComponent, 1565300932);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFMODAudioComponent(Z_Construct_UClass_UFMODAudioComponent, &UFMODAudioComponent::StaticClass, TEXT("/Script/FMODStudio"), TEXT("UFMODAudioComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFMODAudioComponent);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

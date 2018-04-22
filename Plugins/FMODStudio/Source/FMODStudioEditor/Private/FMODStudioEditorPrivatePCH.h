@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2017.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2018.
 #pragma once
 
 #include "Runtime/Engine/Public/Engine.h"
@@ -8,7 +8,6 @@
 #include "Runtime/Engine/Classes/Curves/NameCurve.h"
 #include "Runtime/Engine/Classes/Curves/RichCurve.h"
 #include "Runtime/MovieScene/Public/MovieScene.h"
-#include "Runtime/MovieScene/Public/MovieSceneSequenceInstance.h"
 #include "Runtime/MovieScene/Public/KeyParams.h"
 #include "Runtime/Slate/Public/SlateBasics.h"
 
@@ -19,3 +18,5 @@
 #include "Runtime/MovieScene/Public/MovieSceneSection.h"
 #include "Editor/UnrealEd/Public/ScopedTransaction.h"
 #include "Editor/UnrealEd/Public/UnrealEd.h"
+
+DECLARE_LOG_CATEGORY_EXTERN(LogFMOD, Log, All);

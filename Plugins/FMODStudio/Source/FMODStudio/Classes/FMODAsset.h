@@ -1,9 +1,9 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2017.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2012-2018.
 
 #pragma once
 
 #include "Guid.h"
-#include "FMODStudioPrivatePCH.h"
+#include "CoreMinimal.h"
 #include "FMODAsset.generated.h"
 
 /**

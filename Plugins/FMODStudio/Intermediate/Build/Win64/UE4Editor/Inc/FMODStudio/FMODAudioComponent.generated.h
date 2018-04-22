@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -76,7 +76,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UStrProperty,Z_Param_Value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetProgrammerSoundName(Z_Param_Value); \
+		P_THIS->SetProgrammerSoundName(Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -84,7 +84,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=this->GetTimelinePosition(); \
+		*(int32*)Z_Param__Result=P_THIS->GetTimelinePosition(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -93,7 +93,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UIntProperty,Z_Param_Time); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetTimelinePosition(Z_Param_Time); \
+		P_THIS->SetTimelinePosition(Z_Param_Time); \
 		P_NATIVE_END; \
 	} \
  \
@@ -101,7 +101,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=this->GetLength(); \
+		*(int32*)Z_Param__Result=P_THIS->GetLength(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -110,7 +110,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UByteProperty,Z_Param_Property); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=this->GetProperty(EFMODEventProperty::Type(Z_Param_Property)); \
+		*(float*)Z_Param__Result=P_THIS->GetProperty(EFMODEventProperty::Type(Z_Param_Property)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -120,7 +120,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetProperty(EFMODEventProperty::Type(Z_Param_Property),Z_Param_Value); \
+		P_THIS->SetProperty(EFMODEventProperty::Type(Z_Param_Property),Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -129,7 +129,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UNameProperty,Z_Param_Name); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=this->GetParameter(Z_Param_Name); \
+		*(float*)Z_Param__Result=P_THIS->GetParameter(Z_Param_Name); \
 		P_NATIVE_END; \
 	} \
  \
@@ -139,7 +139,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetParameter(Z_Param_Name,Z_Param_Value); \
+		P_THIS->SetParameter(Z_Param_Name,Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -148,7 +148,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_UBOOL(Z_Param_paused); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetPaused(Z_Param_paused); \
+		P_THIS->SetPaused(Z_Param_paused); \
 		P_NATIVE_END; \
 	} \
  \
@@ -157,7 +157,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_pitch); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetPitch(Z_Param_pitch); \
+		P_THIS->SetPitch(Z_Param_pitch); \
 		P_NATIVE_END; \
 	} \
  \
@@ -166,7 +166,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_volume); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetVolume(Z_Param_volume); \
+		P_THIS->SetVolume(Z_Param_volume); \
 		P_NATIVE_END; \
 	} \
  \
@@ -174,7 +174,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->IsPlaying(); \
+		*(bool*)Z_Param__Result=P_THIS->IsPlaying(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -182,7 +182,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->TriggerCue(); \
+		P_THIS->TriggerCue(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -190,7 +190,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->Release(); \
+		P_THIS->Release(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -198,7 +198,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->Stop(); \
+		P_THIS->Stop(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -206,7 +206,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->Play(); \
+		P_THIS->Play(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -215,7 +215,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_OBJECT(UFMODEvent,Z_Param_NewEvent); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetEvent(Z_Param_NewEvent); \
+		P_THIS->SetEvent(Z_Param_NewEvent); \
 		P_NATIVE_END; \
 	}
 
@@ -227,7 +227,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UStrProperty,Z_Param_Value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetProgrammerSoundName(Z_Param_Value); \
+		P_THIS->SetProgrammerSoundName(Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -235,7 +235,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=this->GetTimelinePosition(); \
+		*(int32*)Z_Param__Result=P_THIS->GetTimelinePosition(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -244,7 +244,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UIntProperty,Z_Param_Time); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetTimelinePosition(Z_Param_Time); \
+		P_THIS->SetTimelinePosition(Z_Param_Time); \
 		P_NATIVE_END; \
 	} \
  \
@@ -252,7 +252,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=this->GetLength(); \
+		*(int32*)Z_Param__Result=P_THIS->GetLength(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -261,7 +261,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UByteProperty,Z_Param_Property); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=this->GetProperty(EFMODEventProperty::Type(Z_Param_Property)); \
+		*(float*)Z_Param__Result=P_THIS->GetProperty(EFMODEventProperty::Type(Z_Param_Property)); \
 		P_NATIVE_END; \
 	} \
  \
@@ -271,7 +271,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetProperty(EFMODEventProperty::Type(Z_Param_Property),Z_Param_Value); \
+		P_THIS->SetProperty(EFMODEventProperty::Type(Z_Param_Property),Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -280,7 +280,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UNameProperty,Z_Param_Name); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(float*)Z_Param__Result=this->GetParameter(Z_Param_Name); \
+		*(float*)Z_Param__Result=P_THIS->GetParameter(Z_Param_Name); \
 		P_NATIVE_END; \
 	} \
  \
@@ -290,7 +290,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetParameter(Z_Param_Name,Z_Param_Value); \
+		P_THIS->SetParameter(Z_Param_Name,Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -299,7 +299,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_UBOOL(Z_Param_paused); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetPaused(Z_Param_paused); \
+		P_THIS->SetPaused(Z_Param_paused); \
 		P_NATIVE_END; \
 	} \
  \
@@ -308,7 +308,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_pitch); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetPitch(Z_Param_pitch); \
+		P_THIS->SetPitch(Z_Param_pitch); \
 		P_NATIVE_END; \
 	} \
  \
@@ -317,7 +317,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_PROPERTY(UFloatProperty,Z_Param_volume); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetVolume(Z_Param_volume); \
+		P_THIS->SetVolume(Z_Param_volume); \
 		P_NATIVE_END; \
 	} \
  \
@@ -325,7 +325,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=this->IsPlaying(); \
+		*(bool*)Z_Param__Result=P_THIS->IsPlaying(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -333,7 +333,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->TriggerCue(); \
+		P_THIS->TriggerCue(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -341,7 +341,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->Release(); \
+		P_THIS->Release(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -349,7 +349,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->Stop(); \
+		P_THIS->Stop(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -357,7 +357,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->Play(); \
+		P_THIS->Play(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -366,7 +366,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 		P_GET_OBJECT(UFMODEvent,Z_Param_NewEvent); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		this->SetEvent(Z_Param_NewEvent); \
+		P_THIS->SetEvent(Z_Param_NewEvent); \
 		P_NATIVE_END; \
 	}
 
@@ -450,5 +450,6 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 	op(EFMODEventProperty::ScheduleDelay) \
 	op(EFMODEventProperty::ScheduleLookahead) \
 	op(EFMODEventProperty::MinimumDistance) \
-	op(EFMODEventProperty::MaximumDistance) 
+	op(EFMODEventProperty::MaximumDistance) \
+	op(EFMODEventProperty::Count) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

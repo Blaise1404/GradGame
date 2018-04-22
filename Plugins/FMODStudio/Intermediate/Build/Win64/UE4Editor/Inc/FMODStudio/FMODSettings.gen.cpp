@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -108,7 +108,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 			auto NewStructOpsLambda = []() -> void* { return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FCustomPoolSizes>(); };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_XboxOne_MetaData[] = {
-				{ "Category", "CustomPoolSizes" },
+				{ "Category", "InitSettings" },
 				{ "ClampMin", "0" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
 				{ "ToolTip", "Default = 0 (Disabled) units in bytes" },
@@ -117,7 +117,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 			static const UE4CodeGen_Private::FIntPropertyParams NewProp_XboxOne = { UE4CodeGen_Private::EPropertyClass::Int, "XboxOne", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(FCustomPoolSizes, XboxOne), METADATA_PARAMS(NewProp_XboxOne_MetaData, ARRAY_COUNT(NewProp_XboxOne_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Switch_MetaData[] = {
-				{ "Category", "CustomPoolSizes" },
+				{ "Category", "InitSettings" },
 				{ "ClampMin", "0" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
 				{ "ToolTip", "Default = 0 (Disabled) units in bytes" },
@@ -126,7 +126,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 			static const UE4CodeGen_Private::FIntPropertyParams NewProp_Switch = { UE4CodeGen_Private::EPropertyClass::Int, "Switch", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(FCustomPoolSizes, Switch), METADATA_PARAMS(NewProp_Switch_MetaData, ARRAY_COUNT(NewProp_Switch_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PS4_MetaData[] = {
-				{ "Category", "CustomPoolSizes" },
+				{ "Category", "InitSettings" },
 				{ "ClampMin", "0" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
 				{ "ToolTip", "Default = 0 (Disabled) units in bytes" },
@@ -135,7 +135,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 			static const UE4CodeGen_Private::FIntPropertyParams NewProp_PS4 = { UE4CodeGen_Private::EPropertyClass::Int, "PS4", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(FCustomPoolSizes, PS4), METADATA_PARAMS(NewProp_PS4_MetaData, ARRAY_COUNT(NewProp_PS4_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Mobile_MetaData[] = {
-				{ "Category", "CustomPoolSizes" },
+				{ "Category", "InitSettings" },
 				{ "ClampMin", "0" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
 				{ "ToolTip", "Default = 0 (Disabled) units in bytes" },
@@ -144,7 +144,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 			static const UE4CodeGen_Private::FIntPropertyParams NewProp_Mobile = { UE4CodeGen_Private::EPropertyClass::Int, "Mobile", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(FCustomPoolSizes, Mobile), METADATA_PARAMS(NewProp_Mobile_MetaData, ARRAY_COUNT(NewProp_Mobile_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Desktop_MetaData[] = {
-				{ "Category", "CustomPoolSizes" },
+				{ "Category", "InitSettings" },
 				{ "ClampMin", "0" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
 				{ "ToolTip", "Default = 0 (Disabled) units in bytes" },
@@ -174,7 +174,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FCustomPoolSizes_CRC() { return 3388652309U; }
+	uint32 Get_Z_Construct_UScriptStruct_FCustomPoolSizes_CRC() { return 2753592135U; }
 	void UFMODSettings::StaticRegisterNativesUFMODSettings()
 	{
 	}
@@ -247,8 +247,18 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 			static const UE4CodeGen_Private::FArrayPropertyParams NewProp_PluginFiles = { UE4CodeGen_Private::EPropertyClass::Array, "PluginFiles", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(UFMODSettings, PluginFiles), METADATA_PARAMS(NewProp_PluginFiles_MetaData, ARRAY_COUNT(NewProp_PluginFiles_MetaData)) };
 			static const UE4CodeGen_Private::FStrPropertyParams NewProp_PluginFiles_Inner = { UE4CodeGen_Private::EPropertyClass::Str, "PluginFiles", RF_Public|RF_Transient|RF_MarkAsNative, 0x0000000000004000, 1, nullptr, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EditorLiveUpdatePort_MetaData[] = {
+				{ "Category", "Advanced" },
+				{ "EditCondition", "bEnableEditorLiveUpdate" },
+				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
+				{ "ToolTip", "Live update port to use while in editor for auditioning. *Requires Restart*" },
+			};
+#endif
+			static const UE4CodeGen_Private::FIntPropertyParams NewProp_EditorLiveUpdatePort = { UE4CodeGen_Private::EPropertyClass::Int, "EditorLiveUpdatePort", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(UFMODSettings, EditorLiveUpdatePort), METADATA_PARAMS(NewProp_EditorLiveUpdatePort_MetaData, ARRAY_COUNT(NewProp_EditorLiveUpdatePort_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_LiveUpdatePort_MetaData[] = {
 				{ "Category", "Advanced" },
+				{ "EditCondition", "bEnableLiveUpdate" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
 				{ "ToolTip", "Live update port to use, or 0 for default." },
 			};
@@ -371,6 +381,15 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 #endif
 			static const UE4CodeGen_Private::FStructPropertyParams NewProp_BankOutputDirectory = { UE4CodeGen_Private::EPropertyClass::Struct, "BankOutputDirectory", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, STRUCT_OFFSET(UFMODSettings, BankOutputDirectory), Z_Construct_UScriptStruct_FDirectoryPath, METADATA_PARAMS(NewProp_BankOutputDirectory_MetaData, ARRAY_COUNT(NewProp_BankOutputDirectory_MetaData)) };
 #if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bEnableEditorLiveUpdate_MetaData[] = {
+				{ "Category", "Basic" },
+				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
+				{ "ToolTip", "Enable live update in Editor for Auditioning. *Requires Restart*" },
+			};
+#endif
+			auto NewProp_bEnableEditorLiveUpdate_SetBit = [](void* Obj){ ((UFMODSettings*)Obj)->bEnableEditorLiveUpdate = 1; };
+			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bEnableEditorLiveUpdate = { UE4CodeGen_Private::EPropertyClass::Bool, "bEnableEditorLiveUpdate", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000004001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFMODSettings), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_bEnableEditorLiveUpdate_SetBit)>::SetBit, METADATA_PARAMS(NewProp_bEnableEditorLiveUpdate_MetaData, ARRAY_COUNT(NewProp_bEnableEditorLiveUpdate_MetaData)) };
+#if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bEnableLiveUpdate_MetaData[] = {
 				{ "Category", "Basic" },
 				{ "ModuleRelativePath", "Classes/FMODSettings.h" },
@@ -405,6 +424,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ContentBrowserPrefix,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PluginFiles,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PluginFiles_Inner,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_EditorLiveUpdatePort,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_LiveUpdatePort,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MemoryPoolSizes,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bLockAllBuses,
@@ -420,6 +440,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bVol0Virtual,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_OutputFormat,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BankOutputDirectory,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bEnableEditorLiveUpdate,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bEnableLiveUpdate,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bLoadAllSampleData,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bLoadAllBanks,
@@ -442,7 +463,7 @@ static struct FScriptStruct_FMODStudio_StaticRegisterNativesFCustomPoolSizes
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFMODSettings, 4264030167);
+	IMPLEMENT_CLASS(UFMODSettings, 147228867);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFMODSettings(Z_Construct_UClass_UFMODSettings, &UFMODSettings::StaticClass, TEXT("/Script/FMODStudio"), TEXT("UFMODSettings"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFMODSettings);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

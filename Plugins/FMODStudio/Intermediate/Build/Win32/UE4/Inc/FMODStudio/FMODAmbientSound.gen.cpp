@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeFMODAmbientSound() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFMODAmbientSound, 935802514);
+	IMPLEMENT_CLASS(AFMODAmbientSound, 2005277223);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFMODAmbientSound(Z_Construct_UClass_AFMODAmbientSound, &AFMODAmbientSound::StaticClass, TEXT("/Script/FMODStudio"), TEXT("AFMODAmbientSound"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFMODAmbientSound);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
