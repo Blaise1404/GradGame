@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct FFMODEventInstance;
@@ -24,12 +24,14 @@ class UFMODAudioComponent;
 #endif
 #define FMODSTUDIO_FMODBlueprintStatics_generated_h
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_29_GENERATED_BODY \
-	friend FMODSTUDIO_API class UScriptStruct* Z_Construct_UScriptStruct_FFMODEventInstance(); \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_29_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFMODEventInstance_Statics; \
 	FMODSTUDIO_API static class UScriptStruct* StaticStruct();
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS \
+template<> FMODSTUDIO_API UScriptStruct* StaticStruct<struct FFMODEventInstance>();
+
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execMixerResume) \
 	{ \
@@ -178,6 +180,25 @@ class UFMODAudioComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFMODBlueprintStatics::EventInstanceIsValid(Z_Param_EventInstance); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetGlobalParameterByName) \
+	{ \
+		P_GET_PROPERTY(UNameProperty,Z_Param_Name); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFMODBlueprintStatics::GetGlobalParameterByName(Z_Param_Name); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetGlobalParameterByName) \
+	{ \
+		P_GET_PROPERTY(UNameProperty,Z_Param_Name); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFMODBlueprintStatics::SetGlobalParameterByName(Z_Param_Name,Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -335,9 +356,10 @@ class UFMODAudioComponent;
 		P_GET_PROPERTY(UByteProperty,Z_Param_LocationType); \
 		P_GET_UBOOL(Z_Param_bStopWhenAttachedToDestroyed); \
 		P_GET_UBOOL(Z_Param_bAutoPlay); \
+		P_GET_UBOOL(Z_Param_bAutoDestroy); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFMODAudioComponent**)Z_Param__Result=UFMODBlueprintStatics::PlayEventAttached(Z_Param_Event,Z_Param_AttachToComponent,Z_Param_AttachPointName,Z_Param_Location,EAttachLocation::Type(Z_Param_LocationType),Z_Param_bStopWhenAttachedToDestroyed,Z_Param_bAutoPlay); \
+		*(UFMODAudioComponent**)Z_Param__Result=UFMODBlueprintStatics::PlayEventAttached(Z_Param_Event,Z_Param_AttachToComponent,Z_Param_AttachPointName,Z_Param_Location,EAttachLocation::Type(Z_Param_LocationType),Z_Param_bStopWhenAttachedToDestroyed,Z_Param_bAutoPlay,Z_Param_bAutoDestroy); \
 		P_NATIVE_END; \
 	} \
  \
@@ -365,7 +387,7 @@ class UFMODAudioComponent;
 	}
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execMixerResume) \
 	{ \
@@ -514,6 +536,25 @@ class UFMODAudioComponent;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=UFMODBlueprintStatics::EventInstanceIsValid(Z_Param_EventInstance); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetGlobalParameterByName) \
+	{ \
+		P_GET_PROPERTY(UNameProperty,Z_Param_Name); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=UFMODBlueprintStatics::GetGlobalParameterByName(Z_Param_Name); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetGlobalParameterByName) \
+	{ \
+		P_GET_PROPERTY(UNameProperty,Z_Param_Name); \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_Value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		UFMODBlueprintStatics::SetGlobalParameterByName(Z_Param_Name,Z_Param_Value); \
 		P_NATIVE_END; \
 	} \
  \
@@ -671,9 +712,10 @@ class UFMODAudioComponent;
 		P_GET_PROPERTY(UByteProperty,Z_Param_LocationType); \
 		P_GET_UBOOL(Z_Param_bStopWhenAttachedToDestroyed); \
 		P_GET_UBOOL(Z_Param_bAutoPlay); \
+		P_GET_UBOOL(Z_Param_bAutoDestroy); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		*(UFMODAudioComponent**)Z_Param__Result=UFMODBlueprintStatics::PlayEventAttached(Z_Param_Event,Z_Param_AttachToComponent,Z_Param_AttachPointName,Z_Param_Location,EAttachLocation::Type(Z_Param_LocationType),Z_Param_bStopWhenAttachedToDestroyed,Z_Param_bAutoPlay); \
+		*(UFMODAudioComponent**)Z_Param__Result=UFMODBlueprintStatics::PlayEventAttached(Z_Param_Event,Z_Param_AttachToComponent,Z_Param_AttachPointName,Z_Param_Location,EAttachLocation::Type(Z_Param_LocationType),Z_Param_bStopWhenAttachedToDestroyed,Z_Param_bAutoPlay,Z_Param_bAutoDestroy); \
 		P_NATIVE_END; \
 	} \
  \
@@ -701,27 +743,25 @@ class UFMODAudioComponent;
 	}
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS_NO_PURE_DECLS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFMODBlueprintStatics(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODBlueprintStatics(); \
+	friend struct Z_Construct_UClass_UFMODBlueprintStatics_Statics; \
 public: \
-	DECLARE_CLASS(UFMODBlueprintStatics, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/FMODStudio"), NO_API) \
-	DECLARE_SERIALIZER(UFMODBlueprintStatics) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFMODBlueprintStatics, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FMODStudio"), NO_API) \
+	DECLARE_SERIALIZER(UFMODBlueprintStatics)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS \
 private: \
 	static void StaticRegisterNativesUFMODBlueprintStatics(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODBlueprintStatics(); \
+	friend struct Z_Construct_UClass_UFMODBlueprintStatics_Statics; \
 public: \
-	DECLARE_CLASS(UFMODBlueprintStatics, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/FMODStudio"), NO_API) \
-	DECLARE_SERIALIZER(UFMODBlueprintStatics) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFMODBlueprintStatics, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FMODStudio"), NO_API) \
+	DECLARE_SERIALIZER(UFMODBlueprintStatics)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_STANDARD_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODBlueprintStatics(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODBlueprintStatics) \
@@ -734,7 +774,7 @@ private: \
 public:
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_ENHANCED_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODBlueprintStatics(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -747,32 +787,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFMODBlueprintStatics); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODBlueprintStatics)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_PRIVATE_PROPERTY_OFFSET
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_41_PROLOG
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_GENERATED_BODY_LEGACY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_PRIVATE_PROPERTY_OFFSET
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_41_PROLOG
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_STANDARD_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_GENERATED_BODY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_ENHANCED_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_RPC_WRAPPERS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_INCLASS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h_44_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class FMODBlueprintStatics."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FMODSTUDIO_API UClass* StaticClass<class UFMODBlueprintStatics>();
+
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h
+#define CURRENT_FILE_ID e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODBlueprintStatics_h
 
 
 #define FOREACH_ENUM_EFMOD_STUDIO_STOP_MODE(op) \

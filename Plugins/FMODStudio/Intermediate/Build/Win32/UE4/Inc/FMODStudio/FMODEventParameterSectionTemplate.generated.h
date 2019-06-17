@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef FMODSTUDIO_FMODEventParameterSectionTemplate_generated_h
@@ -13,15 +13,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FMODSTUDIO_FMODEventParameterSectionTemplate_generated_h
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventParameterSectionTemplate_h_14_GENERATED_BODY \
-	friend FMODSTUDIO_API class UScriptStruct* Z_Construct_UScriptStruct_FFMODEventParameterSectionTemplate(); \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventParameterSectionTemplate_h_15_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFMODEventParameterSectionTemplate_Statics; \
 	FMODSTUDIO_API static class UScriptStruct* StaticStruct(); \
-	FORCEINLINE static uint32 __PPO__Parameters() { return STRUCT_OFFSET(FFMODEventParameterSectionTemplate, Parameters); } \
-	typedef FMovieSceneEvalTemplate Super;
+	typedef FMovieSceneParameterSectionTemplate Super;
 
+
+template<> FMODSTUDIO_API UScriptStruct* StaticStruct<struct FFMODEventParameterSectionTemplate>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventParameterSectionTemplate_h
+#define CURRENT_FILE_ID e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventParameterSectionTemplate_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

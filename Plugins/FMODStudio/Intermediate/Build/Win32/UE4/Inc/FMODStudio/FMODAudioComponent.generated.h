@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UFMODEvent;
@@ -14,17 +14,21 @@ class UFMODEvent;
 #endif
 #define FMODSTUDIO_FMODAudioComponent_generated_h
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_84_GENERATED_BODY \
-	friend FMODSTUDIO_API class UScriptStruct* Z_Construct_UScriptStruct_FFMODOcclusionDetails(); \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_81_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFMODOcclusionDetails_Statics; \
 	FMODSTUDIO_API static class UScriptStruct* StaticStruct();
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_61_GENERATED_BODY \
-	friend FMODSTUDIO_API class UScriptStruct* Z_Construct_UScriptStruct_FFMODAttenuationDetails(); \
+template<> FMODSTUDIO_API UScriptStruct* StaticStruct<struct FFMODOcclusionDetails>();
+
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_56_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFMODAttenuationDetails_Statics; \
 	FMODSTUDIO_API static class UScriptStruct* StaticStruct();
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_125_DELEGATE \
+template<> FMODSTUDIO_API UScriptStruct* StaticStruct<struct FFMODAttenuationDetails>();
+
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_108_DELEGATE \
 struct _Script_FMODStudio_eventOnTimelineBeat_Parms \
 { \
 	int32 Bar; \
@@ -47,7 +51,7 @@ static inline void FOnTimelineBeat_DelegateWrapper(const FMulticastScriptDelegat
 }
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_123_DELEGATE \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_105_DELEGATE \
 struct _Script_FMODStudio_eventOnTimelineMarker_Parms \
 { \
 	FString Name; \
@@ -62,14 +66,14 @@ static inline void FOnTimelineMarker_DelegateWrapper(const FMulticastScriptDeleg
 }
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_121_DELEGATE \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_103_DELEGATE \
 static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegate& OnEventStopped) \
 { \
 	OnEventStopped.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_RPC_WRAPPERS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execSetProgrammerSoundName) \
 	{ \
@@ -220,7 +224,7 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	}
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_RPC_WRAPPERS_NO_PURE_DECLS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execSetProgrammerSoundName) \
 	{ \
@@ -371,27 +375,25 @@ static inline void FOnEventStopped_DelegateWrapper(const FMulticastScriptDelegat
 	}
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_INCLASS_NO_PURE_DECLS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFMODAudioComponent(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODAudioComponent(); \
+	friend struct Z_Construct_UClass_UFMODAudioComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFMODAudioComponent, USceneComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/FMODStudio"), NO_API) \
-	DECLARE_SERIALIZER(UFMODAudioComponent) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFMODAudioComponent, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FMODStudio"), NO_API) \
+	DECLARE_SERIALIZER(UFMODAudioComponent)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_INCLASS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_INCLASS \
 private: \
 	static void StaticRegisterNativesUFMODAudioComponent(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODAudioComponent(); \
+	friend struct Z_Construct_UClass_UFMODAudioComponent_Statics; \
 public: \
-	DECLARE_CLASS(UFMODAudioComponent, USceneComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/FMODStudio"), NO_API) \
-	DECLARE_SERIALIZER(UFMODAudioComponent) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFMODAudioComponent, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/FMODStudio"), NO_API) \
+	DECLARE_SERIALIZER(UFMODAudioComponent)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_STANDARD_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODAudioComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODAudioComponent) \
@@ -404,7 +406,7 @@ private: \
 public:
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_ENHANCED_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODAudioComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -417,32 +419,34 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFMODAudioComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODAudioComponent)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_PRIVATE_PROPERTY_OFFSET
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_145_PROLOG
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_GENERATED_BODY_LEGACY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_PRIVATE_PROPERTY_OFFSET
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_129_PROLOG
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_RPC_WRAPPERS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_INCLASS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_STANDARD_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_RPC_WRAPPERS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_INCLASS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_GENERATED_BODY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_RPC_WRAPPERS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_INCLASS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_148_ENHANCED_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_RPC_WRAPPERS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_INCLASS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h_132_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class FMODAudioComponent."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FMODSTUDIO_API UClass* StaticClass<class UFMODAudioComponent>();
+
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h
+#define CURRENT_FILE_ID e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODAudioComponent_h
 
 
 #define FOREACH_ENUM_EFMODEVENTPROPERTY(op) \

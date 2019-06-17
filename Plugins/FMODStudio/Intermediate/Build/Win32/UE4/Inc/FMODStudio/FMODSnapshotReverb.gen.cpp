@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
-#include "Classes/FMODSnapshotReverb.h"
+#include "UObject/GeneratedCppIncludes.h"
+#include "FMODStudio/Classes/FMODSnapshotReverb.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,61 +26,91 @@ void EmptyLinkFunctionForGeneratedCodeFMODSnapshotReverb() {}
 	{
 		return UFMODSnapshotReverb::StaticClass();
 	}
+	struct Z_Construct_UClass_UFMODSnapshotReverb_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bShowAsAsset_MetaData[];
+#endif
+		static void NewProp_bShowAsAsset_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bShowAsAsset;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AssetGuid_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_AssetGuid;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFMODSnapshotReverb_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UReverbEffect,
+		(UObject* (*)())Z_Construct_UPackage__Script_FMODStudio,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFMODSnapshotReverb_Statics::Class_MetaDataParams[] = {
+		{ "HideCategories", "object" },
+		{ "IncludePath", "FMODSnapshotReverb.h" },
+		{ "ModuleRelativePath", "Classes/FMODSnapshotReverb.h" },
+		{ "ToolTip", "FMOD Event Asset." },
+	};
+#endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset_MetaData[] = {
+		{ "ModuleRelativePath", "Classes/FMODSnapshotReverb.h" },
+		{ "ToolTip", "Whether to show in the content window" },
+	};
+#endif
+	void Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset_SetBit(void* Obj)
+	{
+		((UFMODSnapshotReverb*)Obj)->bShowAsAsset = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset = { "bShowAsAsset", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UFMODSnapshotReverb), &Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset_SetBit, METADATA_PARAMS(Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_AssetGuid_MetaData[] = {
+		{ "ModuleRelativePath", "Classes/FMODSnapshotReverb.h" },
+		{ "ToolTip", "The unique Guid, which matches the one exported from FMOD Studio" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_AssetGuid = { "AssetGuid", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFMODSnapshotReverb, AssetGuid), Z_Construct_UScriptStruct_FGuid, METADATA_PARAMS(Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_AssetGuid_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_AssetGuid_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFMODSnapshotReverb_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_bShowAsAsset,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFMODSnapshotReverb_Statics::NewProp_AssetGuid,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFMODSnapshotReverb_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFMODSnapshotReverb>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFMODSnapshotReverb_Statics::ClassParams = {
+		&UFMODSnapshotReverb::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFMODSnapshotReverb_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFMODSnapshotReverb_Statics::PropPointers),
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFMODSnapshotReverb_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFMODSnapshotReverb_Statics::Class_MetaDataParams))
+	};
 	UClass* Z_Construct_UClass_UFMODSnapshotReverb()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			static UObject* (*const DependentSingletons[])() = {
-				(UObject* (*)())Z_Construct_UClass_UReverbEffect,
-				(UObject* (*)())Z_Construct_UPackage__Script_FMODStudio,
-			};
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-				{ "HideCategories", "object" },
-				{ "IncludePath", "FMODSnapshotReverb.h" },
-				{ "ModuleRelativePath", "Classes/FMODSnapshotReverb.h" },
-				{ "ToolTip", "FMOD Event Asset." },
-			};
-#endif
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bShowAsAsset_MetaData[] = {
-				{ "ModuleRelativePath", "Classes/FMODSnapshotReverb.h" },
-				{ "ToolTip", "Whether to show in the content window" },
-			};
-#endif
-			auto NewProp_bShowAsAsset_SetBit = [](void* Obj){ ((UFMODSnapshotReverb*)Obj)->bShowAsAsset = 1; };
-			static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bShowAsAsset = { UE4CodeGen_Private::EPropertyClass::Bool, "bShowAsAsset", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000000, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(UFMODSnapshotReverb), &UE4CodeGen_Private::TBoolSetBitWrapper<decltype(NewProp_bShowAsAsset_SetBit)>::SetBit, METADATA_PARAMS(NewProp_bShowAsAsset_MetaData, ARRAY_COUNT(NewProp_bShowAsAsset_MetaData)) };
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AssetGuid_MetaData[] = {
-				{ "ModuleRelativePath", "Classes/FMODSnapshotReverb.h" },
-				{ "ToolTip", "The unique Guid, which matches the one exported from FMOD Studio" },
-			};
-#endif
-			static const UE4CodeGen_Private::FStructPropertyParams NewProp_AssetGuid = { UE4CodeGen_Private::EPropertyClass::Struct, "AssetGuid", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000000, 1, nullptr, STRUCT_OFFSET(UFMODSnapshotReverb, AssetGuid), Z_Construct_UScriptStruct_FGuid, METADATA_PARAMS(NewProp_AssetGuid_MetaData, ARRAY_COUNT(NewProp_AssetGuid_MetaData)) };
-			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bShowAsAsset,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_AssetGuid,
-			};
-			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-				TCppClassTypeTraits<UFMODSnapshotReverb>::IsAbstract,
-			};
-			static const UE4CodeGen_Private::FClassParams ClassParams = {
-				&UFMODSnapshotReverb::StaticClass,
-				DependentSingletons, ARRAY_COUNT(DependentSingletons),
-				0x00100080u,
-				nullptr, 0,
-				PropPointers, ARRAY_COUNT(PropPointers),
-				nullptr,
-				&StaticCppClassTypeInfo,
-				nullptr, 0,
-				METADATA_PARAMS(Class_MetaDataParams, ARRAY_COUNT(Class_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUClass(OuterClass, ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFMODSnapshotReverb_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFMODSnapshotReverb, 264875953);
+	IMPLEMENT_CLASS(UFMODSnapshotReverb, 2692077150);
+	template<> FMODSTUDIO_API UClass* StaticClass<UFMODSnapshotReverb>()
+	{
+		return UFMODSnapshotReverb::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFMODSnapshotReverb(Z_Construct_UClass_UFMODSnapshotReverb, &UFMODSnapshotReverb::StaticClass, TEXT("/Script/FMODStudio"), TEXT("UFMODSnapshotReverb"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFMODSnapshotReverb);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

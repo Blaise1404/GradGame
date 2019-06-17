@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Known Issues</title>
+<link rel="stylesheet" href="style/docs.css">
+<link rel="stylesheet" href="style/code_highlight.css">
+</head>
+<body>
+<div class="docs-body">
+<div class="manual-toc">
+<p>UE4 Integration 2.00</p>
+<ul>
+<li><a href="welcome.html">Welcome</a></li>
+<li><a href="user-guide.html">User Guide</a></li>
+<li class="manual-current-chapter manual-active-chapter"><a href="known-issues.html">Known Issues</a><ul>
+<li><a href="#known-issues">Known Issues</a><ul>
+<li><a href="#project-output-format">Project Output Format</a></li>
+<li><a href="#content-changes">Content Changes</a></li>
+<li><a href="#asset-paths">Asset Paths</a></li>
+<li><a href="#deployment-issues">Deployment Issues</a></li>
+<li><a href="#live-update">Live Update</a></li>
+<li><a href="#additional-logging">Additional Logging</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="manual-content studio">
+<h1>3. Known Issues</h1>
+<h2 id="known-issues"><a href="#known-issues">3.1 Known Issues</a></h2>
+<h3 id="project-output-format"><a href="#project-output-format">3.1.1 Project Output Format</a></h3>
+<p>If you have modified the <em>Project Output Format</em> setting in your FMOD Studio project, you will need to update your Unreal project settings to match. <br />
+This can be found under 'Edit &gt; Project Settings &gt; FMOD Studio &gt; Output Format'. Keep in mind that this must match the Studio project settings in order for the mix to behave correctly.</p>
+<h3 id="content-changes"><a href="#content-changes">3.1.2 Content Changes</a></h3>
+<p>The editor does not mark FMOD assets as read-only, so there is nothing stopping the user from trying to rearrange the folder structure. <br />
+However any such changes aren't going to change the underlying Studio project, so the changes will be lost next time Unreal is restarted.</p>
+<h3 id="asset-paths"><a href="#asset-paths">3.1.3 Asset Paths</a></h3>
+<p>The inbuilt Unreal asset serialization stores asset by full path, not by GUID. This means that if you rename events or folders in the Studio Tool, then any references in Unreal levels will be lost. For now the only workaround is to avoid renaming events or folders once you have started using them in levels.</p>
+<h3 id="deployment-issues"><a href="#deployment-issues">3.1.4 Deployment Issues</a></h3>
+<p>See the <a href="user-guide.html#deployment">Deployment</a> page for information about issues with deployment.</p>
+<p>If you Launch your game and there is no sound playing or there is error loading the FMODStudio module, it an issue with Deployment.</p>
+<h3 id="live-update"><a href="#live-update">3.1.5 Live Update</a></h3>
+<p>If Live Update is enabled and the FMOD Studio will error when it fails to open the required network port. If this is a problem, then Live Update can be disabled in the Project Settings window.</p>
+<h3 id="additional-logging"><a href="#additional-logging">3.1.6 Additional Logging</a></h3>
+<p>To help track down problems, verbose logging can be turned on for the FMOD integration. Add the following command line to the UE4 editor:</p>
+<div class="highlight language-text"><pre><span></span>-LogCmds=&quot;LogFMOD verbose&quot;
+</pre></div></div>
+
+<p class="manual-footer">UE4 Integration 2.00.01 (2019-05-10). &copy; 2019 Firelight Technologies Pty Ltd.</p>
+</body>
+</html>
+
+</div>

@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef FMODSTUDIO_FMODEventControlSection_generated_h
@@ -13,29 +13,35 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FMODSTUDIO_FMODEventControlSection_generated_h
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_RPC_WRAPPERS
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_RPC_WRAPPERS_NO_PURE_DECLS
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_INCLASS_NO_PURE_DECLS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_24_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FFMODEventControlChannel_Statics; \
+	FMODSTUDIO_API static class UScriptStruct* StaticStruct(); \
+	typedef FMovieSceneByteChannel Super;
+
+
+template<> FMODSTUDIO_API UScriptStruct* StaticStruct<struct FFMODEventControlChannel>();
+
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_RPC_WRAPPERS
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_RPC_WRAPPERS_NO_PURE_DECLS
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFMODEventControlSection(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODEventControlSection(); \
+	friend struct Z_Construct_UClass_UFMODEventControlSection_Statics; \
 public: \
-	DECLARE_CLASS(UFMODEventControlSection, UMovieSceneSection, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/FMODStudio"), FMODSTUDIO_API) \
-	DECLARE_SERIALIZER(UFMODEventControlSection) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFMODEventControlSection, UMovieSceneSection, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FMODStudio"), FMODSTUDIO_API) \
+	DECLARE_SERIALIZER(UFMODEventControlSection)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_INCLASS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_INCLASS \
 private: \
 	static void StaticRegisterNativesUFMODEventControlSection(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODEventControlSection(); \
+	friend struct Z_Construct_UClass_UFMODEventControlSection_Statics; \
 public: \
-	DECLARE_CLASS(UFMODEventControlSection, UMovieSceneSection, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/FMODStudio"), FMODSTUDIO_API) \
-	DECLARE_SERIALIZER(UFMODEventControlSection) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFMODEventControlSection, UMovieSceneSection, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/FMODStudio"), FMODSTUDIO_API) \
+	DECLARE_SERIALIZER(UFMODEventControlSection)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_STANDARD_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	FMODSTUDIO_API UFMODEventControlSection(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODEventControlSection) \
@@ -48,7 +54,7 @@ private: \
 public:
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_ENHANCED_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	FMODSTUDIO_API UFMODEventControlSection(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,38 +67,41 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFMODEventControlSection); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODEventControlSection)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__ControlKeys() { return STRUCT_OFFSET(UFMODEventControlSection, ControlKeys); }
-
-
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_23_PROLOG
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_GENERATED_BODY_LEGACY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_PRIVATE_PROPERTY_OFFSET
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_55_PROLOG
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_RPC_WRAPPERS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_INCLASS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_STANDARD_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_RPC_WRAPPERS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_INCLASS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_GENERATED_BODY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_INCLASS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_27_ENHANCED_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_RPC_WRAPPERS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_INCLASS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h_58_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class FMODEventControlSection."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FMODSTUDIO_API UClass* StaticClass<class UFMODEventControlSection>();
+
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h
+#define CURRENT_FILE_ID e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Private_Sequencer_FMODEventControlSection_h
 
 
 #define FOREACH_ENUM_EFMODEVENTCONTROLKEY(op) \
-	op(EFMODEventControlKey::Play) \
-	op(EFMODEventControlKey::Stop) 
+	op(EFMODEventControlKey::Stop) \
+	op(EFMODEventControlKey::Play) 
+
+enum class EFMODEventControlKey : uint8;
+template<> FMODSTUDIO_API UEnum* StaticEnum<EFMODEventControlKey>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

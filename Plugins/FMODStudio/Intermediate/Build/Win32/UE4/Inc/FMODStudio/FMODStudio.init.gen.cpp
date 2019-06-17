@@ -1,10 +1,10 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
+#include "UObject/GeneratedCppIncludes.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,10 +26,11 @@ void EmptyLinkFunctionForGeneratedCodeFMODStudio_init() {}
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/FMODStudio",
+				SingletonFuncArray,
+				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x7DB7B0CD,
-				0xF1DFB6BC,
-				SingletonFuncArray, ARRAY_COUNT(SingletonFuncArray),
+				0x25DF553F,
+				0x215CA3E4,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

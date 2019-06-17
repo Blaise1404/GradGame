@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
-#include "Private/Sequencer/FMODEventParameterTrack.h"
+#include "UObject/GeneratedCppIncludes.h"
+#include "FMODStudio/Private/Sequencer/FMODEventParameterTrack.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -26,54 +26,77 @@ void EmptyLinkFunctionForGeneratedCodeFMODEventParameterTrack() {}
 	{
 		return UFMODEventParameterTrack::StaticClass();
 	}
+	struct Z_Construct_UClass_UFMODEventParameterTrack_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Sections_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Sections;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Sections_Inner;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFMODEventParameterTrack_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UMovieSceneNameableTrack,
+		(UObject* (*)())Z_Construct_UPackage__Script_FMODStudio,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFMODEventParameterTrack_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "Sequencer/FMODEventParameterTrack.h" },
+		{ "ModuleRelativePath", "Private/Sequencer/FMODEventParameterTrack.h" },
+		{ "ToolTip", "Handles manipulation of event parameters in a movie scene." },
+	};
+#endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Private/Sequencer/FMODEventParameterTrack.h" },
+		{ "ToolTip", "The sections owned by this track." },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections = { "Sections", nullptr, (EPropertyFlags)0x0040008000000008, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UFMODEventParameterTrack, Sections), METADATA_PARAMS(Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections_MetaData, ARRAY_COUNT(Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections_Inner = { "Sections", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UMovieSceneSection_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UFMODEventParameterTrack_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UFMODEventParameterTrack_Statics::NewProp_Sections_Inner,
+	};
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFMODEventParameterTrack_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFMODEventParameterTrack>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFMODEventParameterTrack_Statics::ClassParams = {
+		&UFMODEventParameterTrack::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		Z_Construct_UClass_UFMODEventParameterTrack_Statics::PropPointers,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		ARRAY_COUNT(Z_Construct_UClass_UFMODEventParameterTrack_Statics::PropPointers),
+		0,
+		0x00A800A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFMODEventParameterTrack_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFMODEventParameterTrack_Statics::Class_MetaDataParams))
+	};
 	UClass* Z_Construct_UClass_UFMODEventParameterTrack()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			static UObject* (*const DependentSingletons[])() = {
-				(UObject* (*)())Z_Construct_UClass_UMovieSceneNameableTrack,
-				(UObject* (*)())Z_Construct_UPackage__Script_FMODStudio,
-			};
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-				{ "IncludePath", "Sequencer/FMODEventParameterTrack.h" },
-				{ "ModuleRelativePath", "Private/Sequencer/FMODEventParameterTrack.h" },
-				{ "ToolTip", "Handles manipulation of event parameters in a movie scene." },
-			};
-#endif
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Sections_MetaData[] = {
-				{ "EditInline", "true" },
-				{ "ModuleRelativePath", "Private/Sequencer/FMODEventParameterTrack.h" },
-				{ "ToolTip", "The sections owned by this track." },
-			};
-#endif
-			static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Sections = { UE4CodeGen_Private::EPropertyClass::Array, "Sections", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040008000000008, 1, nullptr, STRUCT_OFFSET(UFMODEventParameterTrack, Sections), METADATA_PARAMS(NewProp_Sections_MetaData, ARRAY_COUNT(NewProp_Sections_MetaData)) };
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Sections_Inner = { UE4CodeGen_Private::EPropertyClass::Object, "Sections", RF_Public|RF_Transient|RF_MarkAsNative, 0x0000000000080008, 1, nullptr, 0, Z_Construct_UClass_UMovieSceneSection_NoRegister, METADATA_PARAMS(nullptr, 0) };
-			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Sections,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_Sections_Inner,
-			};
-			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-				TCppClassTypeTraits<UFMODEventParameterTrack>::IsAbstract,
-			};
-			static const UE4CodeGen_Private::FClassParams ClassParams = {
-				&UFMODEventParameterTrack::StaticClass,
-				DependentSingletons, ARRAY_COUNT(DependentSingletons),
-				0x00A80080u,
-				nullptr, 0,
-				PropPointers, ARRAY_COUNT(PropPointers),
-				nullptr,
-				&StaticCppClassTypeInfo,
-				nullptr, 0,
-				METADATA_PARAMS(Class_MetaDataParams, ARRAY_COUNT(Class_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUClass(OuterClass, ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFMODEventParameterTrack_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFMODEventParameterTrack, 401854510);
+	IMPLEMENT_CLASS(UFMODEventParameterTrack, 1690398254);
+	template<> FMODSTUDIO_API UClass* StaticClass<UFMODEventParameterTrack>()
+	{
+		return UFMODEventParameterTrack::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFMODEventParameterTrack(Z_Construct_UClass_UFMODEventParameterTrack, &UFMODEventParameterTrack::StaticClass, TEXT("/Script/FMODStudio"), TEXT("UFMODEventParameterTrack"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFMODEventParameterTrack);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "GeneratedCppIncludes.h"
-#include "Classes/FMODSnapshot.h"
+#include "UObject/GeneratedCppIncludes.h"
+#include "FMODStudio/Classes/FMODSnapshot.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -25,41 +25,58 @@ void EmptyLinkFunctionForGeneratedCodeFMODSnapshot() {}
 	{
 		return UFMODSnapshot::StaticClass();
 	}
+	struct Z_Construct_UClass_UFMODSnapshot_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UFMODSnapshot_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UFMODEvent,
+		(UObject* (*)())Z_Construct_UPackage__Script_FMODStudio,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UFMODSnapshot_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "FMODSnapshot.h" },
+		{ "ModuleRelativePath", "Classes/FMODSnapshot.h" },
+		{ "ToolTip", "FMOD Snapshot Asset." },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UFMODSnapshot_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UFMODSnapshot>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UFMODSnapshot_Statics::ClassParams = {
+		&UFMODSnapshot::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UFMODSnapshot_Statics::Class_MetaDataParams, ARRAY_COUNT(Z_Construct_UClass_UFMODSnapshot_Statics::Class_MetaDataParams))
+	};
 	UClass* Z_Construct_UClass_UFMODSnapshot()
 	{
 		static UClass* OuterClass = nullptr;
 		if (!OuterClass)
 		{
-			static UObject* (*const DependentSingletons[])() = {
-				(UObject* (*)())Z_Construct_UClass_UFMODEvent,
-				(UObject* (*)())Z_Construct_UPackage__Script_FMODStudio,
-			};
-#if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-				{ "IncludePath", "FMODSnapshot.h" },
-				{ "ModuleRelativePath", "Classes/FMODSnapshot.h" },
-				{ "ToolTip", "FMOD Snapshot Asset." },
-			};
-#endif
-			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
-				TCppClassTypeTraits<UFMODSnapshot>::IsAbstract,
-			};
-			static const UE4CodeGen_Private::FClassParams ClassParams = {
-				&UFMODSnapshot::StaticClass,
-				DependentSingletons, ARRAY_COUNT(DependentSingletons),
-				0x00100080u,
-				nullptr, 0,
-				nullptr, 0,
-				nullptr,
-				&StaticCppClassTypeInfo,
-				nullptr, 0,
-				METADATA_PARAMS(Class_MetaDataParams, ARRAY_COUNT(Class_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUClass(OuterClass, ClassParams);
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UFMODSnapshot_Statics::ClassParams);
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UFMODSnapshot, 2774250171);
+	IMPLEMENT_CLASS(UFMODSnapshot, 3905153793);
+	template<> FMODSTUDIO_API UClass* StaticClass<UFMODSnapshot>()
+	{
+		return UFMODSnapshot::StaticClass();
+	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UFMODSnapshot(Z_Construct_UClass_UFMODSnapshot, &UFMODSnapshot::StaticClass, TEXT("/Script/FMODStudio"), TEXT("UFMODSnapshot"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UFMODSnapshot);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

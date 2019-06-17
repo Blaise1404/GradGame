@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef FMODSTUDIO_FMODSettings_generated_h
@@ -13,38 +13,38 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FMODSTUDIO_FMODSettings_generated_h
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_29_GENERATED_BODY \
-	friend FMODSTUDIO_API class UScriptStruct* Z_Construct_UScriptStruct_FCustomPoolSizes(); \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_45_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FCustomPoolSizes_Statics; \
 	FMODSTUDIO_API static class UScriptStruct* StaticStruct();
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_RPC_WRAPPERS
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_RPC_WRAPPERS_NO_PURE_DECLS
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_INCLASS_NO_PURE_DECLS \
+template<> FMODSTUDIO_API UScriptStruct* StaticStruct<struct FCustomPoolSizes>();
+
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_RPC_WRAPPERS
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_RPC_WRAPPERS_NO_PURE_DECLS
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFMODSettings(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODSettings(); \
+	friend struct Z_Construct_UClass_UFMODSettings_Statics; \
 public: \
-	DECLARE_CLASS(UFMODSettings, UObject, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), 0, TEXT("/Script/FMODStudio"), NO_API) \
+	DECLARE_CLASS(UFMODSettings, UObject, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), CASTCLASS_None, TEXT("/Script/FMODStudio"), NO_API) \
 	DECLARE_SERIALIZER(UFMODSettings) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
 	static const TCHAR* StaticConfigName() {return TEXT("Engine");} \
 
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_INCLASS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_INCLASS \
 private: \
 	static void StaticRegisterNativesUFMODSettings(); \
-	friend FMODSTUDIO_API class UClass* Z_Construct_UClass_UFMODSettings(); \
+	friend struct Z_Construct_UClass_UFMODSettings_Statics; \
 public: \
-	DECLARE_CLASS(UFMODSettings, UObject, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), 0, TEXT("/Script/FMODStudio"), NO_API) \
+	DECLARE_CLASS(UFMODSettings, UObject, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), CASTCLASS_None, TEXT("/Script/FMODStudio"), NO_API) \
 	DECLARE_SERIALIZER(UFMODSettings) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
 	static const TCHAR* StaticConfigName() {return TEXT("Engine");} \
 
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_STANDARD_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODSettings) \
@@ -57,7 +57,7 @@ private: \
 public:
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_ENHANCED_CONSTRUCTORS \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UFMODSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -70,36 +70,50 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFMODSettings); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFMODSettings)
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_PRIVATE_PROPERTY_OFFSET
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_56_PROLOG
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_GENERATED_BODY_LEGACY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_PRIVATE_PROPERTY_OFFSET
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_73_PROLOG
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_RPC_WRAPPERS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_INCLASS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_STANDARD_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_RPC_WRAPPERS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_INCLASS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_GENERATED_BODY \
+#define e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_PRIVATE_PROPERTY_OFFSET \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_INCLASS_NO_PURE_DECLS \
-	HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_59_ENHANCED_CONSTRUCTORS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_PRIVATE_PROPERTY_OFFSET \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_RPC_WRAPPERS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_INCLASS_NO_PURE_DECLS \
+	e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h_76_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class FMODSettings."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+template<> FMODSTUDIO_API UClass* StaticClass<class UFMODSettings>();
+
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h
+#define CURRENT_FILE_ID e__jk_workspace_2_0_UE4_22_Win64_integrations_UE4_temp_FMODStudio_HostProject_Plugins_FMODStudio_Source_FMODStudio_Classes_FMODSettings_h
 
 
 #define FOREACH_ENUM_EFMODSPEAKERMODE(op) \
 	op(EFMODSpeakerMode::Stereo) \
 	op(EFMODSpeakerMode::Surround_5_1) \
 	op(EFMODSpeakerMode::Surround_7_1) 
+#define FOREACH_ENUM_EFMODLOGGING(op) \
+	op(LEVEL_NONE) \
+	op(LEVEL_ERROR) \
+	op(LEVEL_WARNING) \
+	op(LEVEL_LOG) \
+	op(TYPE_MEMORY) \
+	op(TYPE_FILE) \
+	op(TYPE_CODEC) \
+	op(TYPE_TRACE) \
+	op(DISPLAY_TIMESTAMPS) \
+	op(DISPLAY_LINENUMBERS) \
+	op(DISPLAY_THREAD) 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
